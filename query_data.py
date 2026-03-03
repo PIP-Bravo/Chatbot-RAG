@@ -75,7 +75,7 @@ def query_rag(query_text: str):
     prompt = prompt_template.format(context=context_text, question=query_text)
 
     model = ChatOpenAI(
-        model="gpt-5",
+        model="gpt-4o",
         api_key=os.environ["GITHUB_TOKEN"],
         base_url="https://models.inference.ai.azure.com"
     )
